@@ -1,0 +1,52 @@
+<!-- Nolanda Tep - CSCI 169 Project; Javascript Music Player -->
+
+<!-- i used icons from fontawesome -->
+<script src="https://kit.fontawesome.com/0dd28d3486.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="musicplayer.css">
+
+<div class="entirepage">
+	<img src="https://bit.ly/3eDVDrX" class="backgroundimage" id="bgimage"/>
+	<audio id="song" src="./SOTSSF/TheGlass.mp3" type="mpeg"></audio>
+</div>
+
+<div class="sidebar" id="navbar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeside()">×</a>
+	<a href="#" onclick="tssf()">Songs of by<br>The Story So Far</a>
+	<a href="#" onclick="decor()">Transit by Decorator</a>
+</div>
+<div class="sidebarbutton">
+	<button id="sidebarbutton" onclick="openside()">☰</button>
+</div>
+
+<div class="player">
+	<div class="albumcover">
+		<img src="https://bit.ly/3eDVDrX" id="albumcover">
+	</div>
+	<div class="buttons" id="buttonbg">
+		<div class="progressbar">
+			<input type="range" id="progressbar" min="0" max="" value="0">
+		</div>
+		<div class="tracktime">
+			<div id="currenttime"></div>
+			<div id="songlength"></div>
+		</div>
+		<div class="trackinfo">
+			<div id="title">The Glass</div>
+			<div id="artist">The Story So Far</div>
+		</div>
+		<div class="controls">
+			<div class="leftarrow">
+				<i class="fas fa-chevron-circle-left fa-2x" id="back"></i>
+			</div>
+			<div class="playpause">
+				<i class="fas fa-play-circle fa-2x" id="play"></i>
+				<i class="fas fa-pause-circle fa-2x" id="pause"></i>
+			</div>
+			<div class="rightarrow">
+				<i class="fas fa-chevron-circle-right fa-2x" id="next"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="musicplayer.js"></script>
